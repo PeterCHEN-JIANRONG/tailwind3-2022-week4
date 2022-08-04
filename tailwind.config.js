@@ -14,10 +14,6 @@ module.exports = {
         },
         light: '#FBF2F2',
       },
-      screens: {
-        'md': '720px',
-        '2xl': '1320px',
-      },
     },
   },
   plugins: [
