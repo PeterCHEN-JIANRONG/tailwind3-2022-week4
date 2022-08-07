@@ -1,6 +1,14 @@
+/* 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* page */
+@import './page/index.css';
 
 /* 自訂 base */
 @layer base {
@@ -17,10 +25,6 @@
 
   a:hover {
     opacity: 0.7;
-  }
-
-  .material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   }
 }
 
@@ -53,6 +57,10 @@
     @apply py-2 px-4;
   }
 
+  /* icon 預設值，不知道放哪比較好 */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
 }
 
 /* 自訂 utilities */
