@@ -7,8 +7,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* page */
+/* page style，想改成 SCSS 寫法*/
 @import './page/index.css';
+/* @import './page/index.scss'; */
 
 /* 自訂 base */
 @layer base {
