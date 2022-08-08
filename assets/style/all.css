@@ -810,7 +810,7 @@ a:hover {
       max-width: 1320px;
     }
   }
-/* page */
+/* page style，想改成 SCSS 寫法*/
 .service-item .material-symbols-outlined {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -823,6 +823,7 @@ a:hover {
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
+/* @import './page/index.scss'; */
 /* 自訂 base */
 /* 自訂 components */
 /* 自訂 utilities */
