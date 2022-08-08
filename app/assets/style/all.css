@@ -9,7 +9,7 @@
 
 /* page style，想改成 SCSS 寫法*/
 @import './page/index.css';
-/* @import './page/index.scss'; */
+/* 但是 css 檔沒辦法引入 scss，@import './page/index.scss'; */
 
 /* 自訂 base */
 @layer base {
@@ -18,14 +18,6 @@
     line-height: 1.5;
     font-weight: 400;
     font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, system-ui, sans-serif;
-  }
-
-  a {
-    transition: opacity 0.3s;
-  }
-
-  a:hover {
-    opacity: 0.7;
   }
 }
 
@@ -67,20 +59,26 @@
 /* 自訂 utilities */
 @layer utilities {
   .container {
-    max-width: 100%;
-    padding: 0 12px;
-    margin: 0 auto;
+    @apply max-w-full px-3 mx-auto;
   }
 
   @screen md {
     .container {
-      max-width: 720px;
+      @apply max-w-[720px];
     }
   }
 
   @screen lg {
     .container {
-      max-width: 1320px;
+      @apply max-w-[1320px];
     }
+  }
+
+  .rotate-y-720 {
+    transform: rotateY(720deg);
+  }
+
+  .rotate-x-720 {
+    transform: rotateX(720deg);
   }
 }

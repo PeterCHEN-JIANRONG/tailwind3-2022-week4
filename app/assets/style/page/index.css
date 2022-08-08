@@ -1,3 +1,5 @@
+
+/* service */
 .service-item .material-symbols-outlined {
   transition: all 0.3s;
 }
@@ -6,4 +8,26 @@
 .service-item:hover .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
   transform: scale(1.2);
+}
+
+
+/* classic */
+.classic-list img {
+  transition: all 0.3s;
+}
+
+.classic-list li:hover img {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+
+/* joint */
+.joint-list img {
+  transition: all 0.3s;
+}
+
+.joint-list li:hover img {
+  opacity: 0.7;
+  transform: scale(1.1);
 }
