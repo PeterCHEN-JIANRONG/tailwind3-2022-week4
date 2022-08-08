@@ -1,14 +1,38 @@
+
+/* service */
 .service-item .material-symbols-outlined {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 /* 外層卡片 hover，觸發放大效果 */
-
 .service-item:hover .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
+}
+/* classic */
+.classic-list img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.classic-list li:hover img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* joint */
+.joint-list img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.joint-list li:hover img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
