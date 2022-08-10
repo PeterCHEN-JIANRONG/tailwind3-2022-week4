@@ -31,3 +31,21 @@
   opacity: 0.7;
   transform: scale(1.1);
 }
+
+/* joint */
+.recommend-list img {
+  transition: all 0.3s;
+}
+
+.recommend-list li:hover img {
+  transform: scale(1.05);
+}
+
+/* 限制評論行數 */
+.recommend-list .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
